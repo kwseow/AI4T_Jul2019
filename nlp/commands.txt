@@ -1,0 +1,15 @@
+curl "https://language.googleapis.com/v1/documents:classifyText?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0"  -s -X POST -H "Content-Type: application/json" --data-binary @request.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY}" \
+  -s -X POST -H "Content-Type: application/json" --data-binary @request.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0" -s -X POST -H "Content-Type: application/json" --data-binary @entity_analysis.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0" -s -X POST -H "Content-Type: application/json" --data-binary @sentiment_analysis.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeEntitySentiment?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0" -s -X POST -H "Content-Type: application/json" --data-binary @entity_sentiment.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeSyntax?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0" -s -X POST -H "Content-Type: application/json" --data-binary @syntax_pos.json
+
+curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=AIzaSyCLp5TH8FnGvXHv8x5JWQ6bk2QSALc-2H0" -s -X POST -H "Content-Type: application/json" --data-binary @multilingual.json
+

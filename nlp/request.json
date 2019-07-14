@@ -1,0 +1,6 @@
+{
+  "document":{
+    "type":"PLAIN_TEXT",
+    "content":"Using the Natural Language API's classifyText method, we can sort our text data into categories with a single API call. This method returns a list of content categories that apply to a text document. "
+  }
+}
